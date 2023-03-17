@@ -1,0 +1,18 @@
+.carousel {
+  max-width: 1170px;
+  column-gap: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__item {
+    max-width: 270px;
+  }
+  &__img {
+    max-width: 270px;
+  }
+  &__title {
+    padding: 34px 43px 31px;
+    text-align: center;
+  }
+}

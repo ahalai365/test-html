@@ -1,0 +1,6 @@
+//для динамических данных
+
+@mixin my-mixin($color, $height) {
+  color: $color;
+  height: $height;
+}

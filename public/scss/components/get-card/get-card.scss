@@ -1,0 +1,12 @@
+.get-card {
+  max-height: 950px;
+  &__content {
+    @extend %flex-column;
+  }
+  &__title {
+    margin-top: 160px;
+  }
+  &__subtitle {
+    margin-top: 21px;
+  }
+}

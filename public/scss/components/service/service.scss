@@ -1,0 +1,16 @@
+.service {
+  @extend %flex-column;
+  align-items: flex-start;
+  &__title {
+    margin-top: 159px;
+  }
+  &__subtitle {
+    margin-top: 21px;
+  }
+  &__content {
+    max-width: 1334px;
+    margin: 70px -82px 0 -82px;
+    display: flex;
+    align-items: center;
+  }
+}

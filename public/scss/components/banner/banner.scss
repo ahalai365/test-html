@@ -1,0 +1,25 @@
+.banner {
+  max-height: 1040px;
+  &__content {
+    @extend %flex-column;
+  }
+  &__title {
+    margin-top: 193px;
+    max-width: 758px;
+  }
+  &__subtitle {
+    max-width: 937px;
+    text-align: center;
+    margin-top: 35px;
+  }
+  &__button {
+    margin-top: 59px;
+    width: 180px;
+    height: 45px;
+  }
+  &__img {
+    margin-top: 92px;
+    height: 549px;
+    align-self: stretch;
+  }
+}

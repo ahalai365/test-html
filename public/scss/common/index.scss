@@ -1,0 +1,9 @@
+@import "./fonts.scss";
+@import "./reset.scss";
+@import "./variables.scss";
+@import "./extends.scss";
+@import "./mixins.scss";
+@import "./media_breakpoints.scss";
+
+//это лучше в конце
+@import "./common.scss";

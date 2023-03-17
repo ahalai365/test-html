@@ -1,0 +1,9 @@
+.message {
+  @extend %flex-column;
+  align-items: stretch;
+  height: 574px;
+  &__title {
+    margin-top: 137px;
+    margin-right: auto;
+  }  
+}

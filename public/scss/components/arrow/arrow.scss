@@ -1,0 +1,10 @@
+.arrow {
+  max-height: 20px;
+  width: 32px;
+  &_left {
+    margin-right: 50px;
+  }
+  &_right {
+    margin-left: 50px;
+  }
+}

@@ -1,0 +1,12 @@
+@include desktop {
+  .header {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+@include tablet {
+  .header {
+    //....
+  }
+}

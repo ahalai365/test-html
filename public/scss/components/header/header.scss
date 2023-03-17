@@ -1,0 +1,29 @@
+.header {
+  @extend %template-desktop;
+  display:flex;
+  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 39px 0 40px 0;
+
+  .logo{
+    display: flex;
+    max-width: 213px;
+    
+    &__image {
+      max-height: 39px;
+    }
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__content {
+    width: 608px;
+    display:flex;
+    justify-content: space-between;
+  }
+}

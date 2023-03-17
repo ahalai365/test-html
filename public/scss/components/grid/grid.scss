@@ -1,0 +1,23 @@
+.grid {
+  margin-top: 141px;
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+
+  &__item {
+    @extend %flex-column;
+    padding: 49px 35px;
+    max-width: 370px;
+    max-height: 345px;
+  }
+  &__image {
+    max-width: 100px;
+  }
+  &__title {
+    margin-top: 27px;
+  }
+  &__subtitle {
+    margin-top: 35px;
+  }
+}
+

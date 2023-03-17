@@ -1,0 +1,12 @@
+//для статических данных
+%flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+%template-desktop {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
