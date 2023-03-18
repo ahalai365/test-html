@@ -1,0 +1,37 @@
+.menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left:0;
+  background: linear-gradient(rgb(10, 68, 216), rgb(10, 60, 191));;
+  &__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    cursor: pointer;
+  }
+  &__content {
+    display:flex;
+    flex-direction: column;
+  }
+  &__links {
+    margin-bottom: 10px;
+    @include font("Poppins", 20px, 600, white);
+  }
+  &__sign-up {
+    width: 125px;
+    height: 30px;
+    @include font("Poppins", 10px, 600, rgb(11, 75, 236));
+    border-radius: 10px;
+    border: 0;
+  }
+}
+
+#burger {
+  display: none;
+}
+#burger:checked+.menu {
+  display: block;
+}

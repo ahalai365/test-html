@@ -7,6 +7,26 @@
   </head>
   <body>
     <header class="section header">
+      <label for="burger">
+        <div class="burger">
+          <img class="burger__button" src=<%=require("./images/burger.png")%> />
+          <span class="burger__title">Menu</span>
+        </div>
+      </label>
+      <input type="checkbox" id="burger" />
+      <div class="menu">
+        <label for="burger">
+          <img class="menu__close" src=<%=require("./images/Close.png")%> />
+        </label>
+        <ul class="menu__content">
+          <li class="menu__links cursor_pointer">CARDS</li>
+          <li class="menu__links cursor_pointer">SERVICE</li>
+          <li class="menu__links cursor_pointer">BANKING</li>
+          <li class="menu__links cursor_pointer">FAQ</li>
+          <li class="menu__links cursor_pointer">CONTACT</li>
+          <button class="menu__sign-up">Create Account</button>
+        </ul>
+      </div>
       <section class="section__content">
         <div class="logo">
           <img src=<%=require("./images/logo.png")%> class="logo__image" />
@@ -17,11 +37,11 @@
         </div>
 
         <div class="header__content">
-          <a class="header__links">CARDS</a>
-          <a class="header__links">SERVICE</a>
-          <a class="header__links">BANKING</a>
-          <a class="header__links">FAQ</a>
-          <a class="header__links">CONTACT</a>
+          <a class="header__links cursor_pointer">CARDS</a>
+          <a class="header__links cursor_pointer">SERVICE</a>
+          <a class="header__links cursor_pointer">BANKING</a>
+          <a class="header__links cursor_pointer">FAQ</a>
+          <a class="header__links cursor_pointer">CONTACT</a>
           <button class="header__sign-up">Create Account</button>
         </div>
       </section>
@@ -46,7 +66,7 @@
         <h2 class="get-card__title">EASY PROCESS</h2>
         <h3 class="get-card__subtitle">TO GET A CREDIT CARD</h3>
         <div class="grid">
-          <div class="grid__item">
+          <div class="grid__item grid__item_hover">
             <img class="grid__image"
             src=<%=require("./images/online-application.png")%> />
             <div class="grid__title">ONLINE APPLICATION</div>
@@ -85,34 +105,37 @@
           <img class="arrow arrow_left" src=<%=require("./images/arrow.png")%>
           alt="left" />
           <div class="carousel">
-            <div class="carousel__item">
-              <img src=<%=require("./images/balence.png")%> alt="Balence
-              transform" class="src carousel__img" />
-              <h3 class="carousel__title">Balence transform</h3>
+            <div class="carousel__content">
+              <div class="carousel__item">
+                <img src=<%=require("./images/balence.png")%> alt="Balence
+                transform" class="src carousel__img" />
+                <h3 class="carousel__title">Balence transform</h3>
+              </div>
+
+              <div class="carousel__item">
+                <img src=<%=require("./images/internet-banking.png")%>
+                alt="Internet Banking" class="src carousel__img" />
+                <h3 class="carousel__title">Internet Banking</h3>
+              </div>
+
+              <div class="carousel__item">
+                <img src=<%=require("./images/buying-payment.png")%> alt="Buying
+                Payment" class="src carousel__img" />
+                <h3 class="carousel__title">Buying Payment</h3>
+              </div>
+
+              <div class="carousel__item">
+                <img src=<%=require("./images/ticket.png")%> alt="Buy Air
+                Ticket" class="src carousel__img" />
+                <h3 class="carousel__title">Buy Air Ticket</h3>
+              </div>
+
+              <div class="carousel__item">
+                <img src=<%=require("./images/recharge.png")%> alt="Mobile
+                Recharge" class="src carousel__img" />
+                <h3 class="carousel__title">Mobile Recharge</h3>
+              </div>
             </div>
-            <div class="carousel__item">
-              <img src=<%=require("./images/internet-banking.png")%>
-              alt="Internet Banking" class="src carousel__img" />
-              <h3 class="carousel__title">Internet Banking</h3>
-            </div>
-            <div class="carousel__item">
-              <img src=<%=require("./images/buying-payment.png")%> alt="Buying
-              Payment" class="src carousel__img" />
-              <h3 class="carousel__title">Buying Payment</h3>
-            </div>
-            <div class="carousel__item">
-              <img src=<%=require("./images/ticket.png")%> alt="Buy Air Ticket"
-              class="src carousel__img" />
-              <h3 class="carousel__title">Buy Air Ticket</h3>
-            </div>
-            <!-- <div class="carousel__item">
-              <img
-                src=<%=require("./images/recharge.png")%>
-                alt="Mobile Recharge"
-                class="src carousel__img"
-              />
-              <h3 class="carousel__title">Mobile Recharge</h3>
-            </div> -->
           </div>
           <img class="arrow arrow_right" src=<%=require("./images/arrow.png")%>
           alt="right" />

@@ -1,0 +1,18 @@
+.burger {
+  overflow: hidden;
+  position: absolute;
+  left: -100%;
+  top: 25%;
+  width: 100%;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  &__button {
+    width: 60px;
+  }
+  &__title {
+    margin-left: 15px;
+    @include font("Poppins", 40px, 600, white);
+  }
+}

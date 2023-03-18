@@ -2,7 +2,6 @@
   margin-top: 141px;
   display: flex;
   padding-bottom: 244px;
-  // justify-content: space-between;
   align-items: center;
   gap: 30px;
 
@@ -12,8 +11,6 @@
     padding: 49px 35px;
     background-color: white;
     align-items: center;
-    // transition: all 0.3s ease;
-    transition: .5s ease;
   }
   &__image {
     max-width: 100px;
@@ -30,11 +27,9 @@
   }
   &__item:hover {
     background: linear-gradient(rgb(10, 68, 216), rgb(7, 29, 104));
-    // height: 500px;
-    // transform: scaleY(1.2);
-    transition: .5s ease;
-    }
-    
+    padding: 79px 35px;
+    transition: 1s ease;
+  }
   &__item:hover &__title {
     color: white;
   }

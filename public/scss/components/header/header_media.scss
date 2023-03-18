@@ -1,5 +1,7 @@
 @include mobile {
   .header {
-    display: none;
+    .section__content {
+      display: none;
+    }
   }
 }

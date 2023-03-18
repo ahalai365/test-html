@@ -1,9 +1,12 @@
 .carousel {
-  column-gap: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
+  overflow-x: scroll;
+  &__content {
+    position: relative;
+    column-gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   &__img {
     object-fit: contain;
   }
