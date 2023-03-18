@@ -1,25 +1,39 @@
 .banner {
-  max-height: 1040px;
-  &__content {
-    @extend %flex-column;
+  background-image: url(/src/images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .section__content {
+    flex-direction: column;
+  }
+  &__bg {
+    object-fit: contain;
   }
   &__title {
     margin-top: 193px;
-    max-width: 758px;
+    text-align: center;
+    @include font("Poppins", 40px, 600, white);
+    line-height: 45px;
   }
   &__subtitle {
     max-width: 937px;
     text-align: center;
     margin-top: 35px;
+    @include font("Nunito", 13px, 400, white);
+    line-height: 28px;
   }
   &__button {
     margin-top: 59px;
     width: 180px;
     height: 45px;
+    @include font("Poppins", 14px, 600, rgb(11, 75, 236));
+    line-height: 28px;
+    background-color: white;
+    border-radius: 30px;
+    border: 0;
   }
   &__img {
+    width: 100%;
     margin-top: 92px;
-    height: 549px;
-    align-self: stretch;
+    object-fit: contain;
   }
 }

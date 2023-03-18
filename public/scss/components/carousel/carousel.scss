@@ -1,18 +1,15 @@
 .carousel {
-  max-width: 1170px;
   column-gap: 30px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-  &__item {
-    max-width: 270px;
-  }
+  
   &__img {
-    max-width: 270px;
+    object-fit: contain;
   }
   &__title {
     padding: 34px 43px 31px;
     text-align: center;
+    @include font("Poppins", 19px, 400, rgb(51, 51, 51));
   }
 }

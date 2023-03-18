@@ -1,29 +1,23 @@
 .header {
-  @extend %template-desktop;
-  display:flex;
   height: 120px;
-  justify-content: space-between;
-  align-items: center;
-
   padding: 39px 0 40px 0;
-
-  .logo{
-    display: flex;
-    max-width: 213px;
-    
-    &__image {
-      max-height: 39px;
-    }
-
-    div {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-
+  background: linear-gradient(rgb(10, 68, 216), rgb(10, 60, 191));
   &__content {
-    width: 608px;
     display:flex;
-    justify-content: space-between;
+    align-items: center;
+  }
+  &__links {
+    margin-right: 45px;
+    @include font("Poppins", 10px, 600, white);
+  }
+  &__links:last-child {
+    margin-right: 37px;
+  }
+  &__sign-up {
+    width: 125px;
+    height: 30px;
+    @include font("Poppins", 10px, 600, rgb(11, 75, 236));
+    border-radius: 10px;
+    border: 0;
   }
 }

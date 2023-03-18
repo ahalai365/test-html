@@ -1,14 +1,17 @@
 .service {
-  @extend %flex-column;
-  align-items: flex-start;
+  .section__content {
+    flex-direction: column;
+    align-items: normal;
+  }
   &__title {
     margin-top: 159px;
+    @include font("Raleway", 20px, 400, rgb(128, 128, 128));
   }
   &__subtitle {
     margin-top: 21px;
+    @include font("Poppins", 31px, 600, rgb(51, 51, 51));
   }
   &__content {
-    max-width: 1334px;
     margin: 70px -82px 0 -82px;
     display: flex;
     align-items: center;

@@ -1,0 +1,17 @@
+@include desktopWide {
+  .header {
+    //.... -1
+  }
+}
+
+@include tablet {
+  .header {
+    //.... -1
+  }
+}
+
+@include mobile {
+  .header {
+    //.... column
+  }
+}

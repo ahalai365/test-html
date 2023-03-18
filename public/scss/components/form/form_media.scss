@@ -1,0 +1,12 @@
+@include mobile {
+  .form {
+    flex-wrap: nowrap;
+    gap: 20px 0;
+    height: 100%;
+    margin-bottom: 15px;
+    &__column {
+      row-gap: 15px;
+      height: 100%;
+    }
+  }
+}

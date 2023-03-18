@@ -1,17 +1,16 @@
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
   margin-top: 58px;
   flex-wrap: wrap;
   height: 210px;
+  column-gap: 30px;
+  margin-bottom: 30px;
   &__column {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 210px;
-    max-width: 550px;
   }
   &__column:nth-child(2) {
     .form__input {
@@ -23,7 +22,9 @@
   }
   
   &__submit {
-    max-width: 550px;
+    @include font("Raleway", 14px, 400, white);
+    background: rgb(11, 75, 236);
     height: 50px;
+    border: 0;
   }
 }

@@ -1,0 +1,29 @@
+.logo{
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  
+  &__image {
+    margin-right: auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 14px;
+  }
+
+  &__title {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 3px 3px 2px #000000;
+    font-size: 12px;
+    font-weight: 400; 
+  }
+
+  &__subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 9px;
+    font-weight: 300;  
+    margin-top: 4px;
+  }
+}

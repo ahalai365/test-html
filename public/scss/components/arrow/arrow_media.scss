@@ -1,0 +1,11 @@
+@media(max-width: 1360px){
+  .arrow {
+    background-color: rgb(10, 68, 216);
+    &_left {
+      margin-right: -33px;
+    }
+    &_right {
+      margin-left: -33px;
+    }
+  }
+}

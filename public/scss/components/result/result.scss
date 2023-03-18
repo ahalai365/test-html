@@ -1,14 +1,17 @@
 .result {
-  @extend %flex-column;
-  max-width: 197px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__img {
-    max-width: 60px;
-    max-height: 56px;
+    width: 60px;
+    height: 56px;
   }
   &__title {
+    @include font("Poppins", 33px, 600, white);
     margin-top: 62px;
   }
   &__subtitle {
     margin-top: 20px;
+    @include font("Raleway", 23px, 400, white);
   }
 }

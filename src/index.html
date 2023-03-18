@@ -6,30 +6,29 @@
     <title>test-html</title>
   </head>
   <body>
-    <header class="header">
-      <section class="logo">
-        <img
-          src="https://i1.sndcdn.com/artworks-81H9EvY6Qel56key-zTPAZQ-t500x500.jpg"
-          class="logo__image"
-        />
-        <div>
-          <h1 class="logo__title">Digital banking</h1>
-          <h2 class="logo__subtitle">Be safe banking</h2>
+    <header class="section header">
+      <section class="section__content">
+        <div class="logo">
+          <img src=<%=require("./images/logo.png")%> class="logo__image" />
+          <div class="logo__content">
+            <h1 class="logo__title">DIGITAL BANKING</h1>
+            <h2 class="logo__subtitle">Be Safe Banking</h2>
+          </div>
         </div>
-      </section>
 
-      <section class="header__content">
-        <a class="header__links">cards</a>
-        <a class="header__links">service</a>
-        <a class="header__links">banking</a>
-        <a class="header__links">faq</a>
-        <a class="header__links">contact</a>
-        <button class="sign-up">Create Account</button>
+        <div class="header__content">
+          <a class="header__links">CARDS</a>
+          <a class="header__links">SERVICE</a>
+          <a class="header__links">BANKING</a>
+          <a class="header__links">FAQ</a>
+          <a class="header__links">CONTACT</a>
+          <button class="header__sign-up">Create Account</button>
+        </div>
       </section>
     </header>
 
     <section class="section banner">
-      <div class="banner__content">
+      <div class="section__content">
         <h2 class="banner__title">To Make Your Life Easier Take a Card</h2>
         <p class="banner__subtitle">
           There are many variations of passages of Lorem Ipsum available, but
@@ -38,46 +37,37 @@
           believable.
         </p>
         <button class="banner__button">Apply Now</button>
-        <img
-          class="banner__img"
-          src="https://i1.sndcdn.com/artworks-81H9EvY6Qel56key-zTPAZQ-t500x500.jpg"
-        />
+        <img class="banner__img" src=<%=require("./images/credit-cards.png")%>>
       </div>
     </section>
 
     <section class="section get-card">
-      <div class="get-card__content">
-        <h2 class="get-card__title">easy process</h2>
-        <h3 class="get-card__subtitle">to get a credit card</h3>
+      <div class="section__content">
+        <h2 class="get-card__title">EASY PROCESS</h2>
+        <h3 class="get-card__subtitle">TO GET A CREDIT CARD</h3>
         <div class="grid">
           <div class="grid__item">
-            <img
-              class="grid__image"
-              src="https://i1.sndcdn.com/artworks-81H9EvY6Qel56key-zTPAZQ-t500x500.jpg"
-            />
-            <div class="grid__title">Online Application</div>
+            <img class="grid__image"
+            src=<%=require("./images/online-application.png")%> />
+            <div class="grid__title">ONLINE APPLICATION</div>
             <p class="grid__subtitle">
               Information in the database is published in two formats. It is
               available in PDF comparison according to type of credit card.
             </p>
           </div>
           <div class="grid__item">
-            <img
-              class="grid__image"
-              src="https://i1.sndcdn.com/artworks-81H9EvY6Qel56key-zTPAZQ-t500x500.jpg"
-            />
-            <div class="grid__title">Get Approval</div>
+            <img class="grid__image"
+            src=<%=require("./images/get-approval.png")%> />
+            <div class="grid__title">GET APPROVAL</div>
             <p class="grid__subtitle">
               Information in the database is published in two formats. It is
               available in PDF comparison according to type of credit card.
             </p>
           </div>
           <div class="grid__item">
-            <img
-              class="grid__image"
-              src="https://i1.sndcdn.com/artworks-81H9EvY6Qel56key-zTPAZQ-t500x500.jpg"
-            />
-            <div class="grid__title">Get Your Card</div>
+            <img class="grid__image"
+            src=<%=require("./images/get-your-card.png")%> />
+            <div class="grid__title">GET YOUR CARD</div>
             <p class="grid__subtitle">
               Information in the database is published in two formats. It is
               available in PDF comparison according to type of credit card.
@@ -88,95 +78,71 @@
     </section>
 
     <section class="section service">
-      <h3 class="service__title">useful service avaible</h3>
-      <h2 class="service__subtitle">Service of Credit Card</h2>
-      <div class="service__content">
-        <img
-          class="arrow arrow_left"
-          src="https://i1.sndcdn.com/artworks-81H9EvY6Qel56key-zTPAZQ-t500x500.jpg"
-          alt="left"
-        />
-        <div class="carousel">
-          <div class="carousel__item">
-            <img
-              src="https://i1.sndcdn.com/artworks-81H9EvY6Qel56key-zTPAZQ-t500x500.jpg"
-              alt="Balence transform"
-              class="src carousel__img"
-            />
-            <h3 class="carousel__title">Balence transform</h3>
+      <section class="section__content">
+        <h3 class="service__title">USEFUL SERVICE AVAILABLE</h3>
+        <h2 class="service__subtitle">SERVICE OF CREDIT CARD</h2>
+        <div class="service__content">
+          <img class="arrow arrow_left" src=<%=require("./images/arrow.png")%>
+          alt="left" />
+          <div class="carousel">
+            <div class="carousel__item">
+              <img src=<%=require("./images/balence.png")%> alt="Balence
+              transform" class="src carousel__img" />
+              <h3 class="carousel__title">Balence transform</h3>
+            </div>
+            <div class="carousel__item">
+              <img src=<%=require("./images/internet-banking.png")%>
+              alt="Internet Banking" class="src carousel__img" />
+              <h3 class="carousel__title">Internet Banking</h3>
+            </div>
+            <div class="carousel__item">
+              <img src=<%=require("./images/buying-payment.png")%> alt="Buying
+              Payment" class="src carousel__img" />
+              <h3 class="carousel__title">Buying Payment</h3>
+            </div>
+            <div class="carousel__item">
+              <img src=<%=require("./images/ticket.png")%> alt="Buy Air Ticket"
+              class="src carousel__img" />
+              <h3 class="carousel__title">Buy Air Ticket</h3>
+            </div>
+            <!-- <div class="carousel__item">
+              <img
+                src=<%=require("./images/recharge.png")%>
+                alt="Mobile Recharge"
+                class="src carousel__img"
+              />
+              <h3 class="carousel__title">Mobile Recharge</h3>
+            </div> -->
           </div>
-          <div class="carousel__item">
-            <img
-              src="https://i1.sndcdn.com/artworks-81H9EvY6Qel56key-zTPAZQ-t500x500.jpg"
-              alt="Internet Banking"
-              class="src carousel__img"
-            />
-            <h3 class="carousel__title">Internet Banking</h3>
-          </div>
-          <div class="carousel__item">
-            <img
-              src="https://i1.sndcdn.com/artworks-81H9EvY6Qel56key-zTPAZQ-t500x500.jpg"
-              alt="Buying Payment"
-              class="src carousel__img"
-            />
-            <h3 class="carousel__title">Buying Payment</h3>
-          </div>
-          <div class="carousel__item">
-            <img
-              src="https://i1.sndcdn.com/artworks-81H9EvY6Qel56key-zTPAZQ-t500x500.jpg"
-              alt="Buy Air Ticket"
-              class="src carousel__img"
-            />
-            <h3 class="carousel__title">Buy Air Ticket</h3>
-          </div>
-          <!-- <div class="carousel__item">
-            <img
-              src="https://i1.sndcdn.com/artworks-81H9EvY6Qel56key-zTPAZQ-t500x500.jpg"
-              alt="Mobile Recharge"
-              class="src carousel__img"
-            />
-            <h3 class="carousel__title">Mobile Recharge</h3>
-          </div> -->
+          <img class="arrow arrow_right" src=<%=require("./images/arrow.png")%>
+          alt="right" />
         </div>
-        <img
-          class="arrow arrow_right"
-          src="https://i1.sndcdn.com/artworks-81H9EvY6Qel56key-zTPAZQ-t500x500.jpg"
-          alt="right"
-        />
-      </div>
+      </section>
     </section>
 
     <section class="section results">
       <div class="results__content">
         <div class="result">
-          <img
-            class="result__img"
-            src="https://i1.sndcdn.com/artworks-81H9EvY6Qel56key-zTPAZQ-t500x500.jpg"
+          <img class="result__img" src=<%=require("./images/happy-user.png")%>
           />
           <h2 class="result__title">725M</h2>
           <h3 class="result__subtitle">Happy User</h3>
         </div>
         <div class="result">
-          <img
-            class="result__img"
-            src="https://i1.sndcdn.com/artworks-81H9EvY6Qel56key-zTPAZQ-t500x500.jpg"
+          <img class="result__img" src=<%=require("./images/apprication.png")%>
           />
           <h2 class="result__title">700M</h2>
           <h3 class="result__subtitle">User Apprication</h3>
         </div>
         <div class="result">
-          <img
-            class="result__img"
-            src="https://i1.sndcdn.com/artworks-81H9EvY6Qel56key-zTPAZQ-t500x500.jpg"
-          />
+          <img class="result__img"
+          src=<%=require("./images/payment-service.png")%> />
           <h2 class="result__title">10M+</h2>
           <h3 class="result__subtitle">Payment Service</h3>
         </div>
         <div class="result">
-          <img
-            class="result__img"
-            src="https://i1.sndcdn.com/artworks-81H9EvY6Qel56key-zTPAZQ-t500x500.jpg"
-          />
+          <img class="result__img"
+          src=<%=require("./images/user-feedback.png")%> />
           <h2 class="result__title">600M</h2>
           <h3 class="result__subtitle">User Feedback</h3>
         </div>
@@ -184,7 +150,8 @@
     </section>
 
     <section class="section message">
-      <h2 class="message__title">Your Message</h2>
+      <div class="section__content">
+        <h2 class="message__title">Your Message</h2>
 
         <form class="form">
           <div class="form__column">
@@ -202,9 +169,9 @@
             <button type="submit" class="form__submit">Submit</button>
           </div>
         </form>
-
+      </div>
     </section>
-    <footer class="footer">
+    <footer class="footer section">
       <span class="footer__content"
         >Copyright @ Digital Marketing. AllRight Reseverd</span
       >

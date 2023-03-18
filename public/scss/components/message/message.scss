@@ -1,8 +1,12 @@
 .message {
-  @extend %flex-column;
   align-items: stretch;
-  height: 574px;
+  // height: 574px;
+  .section__content {
+    flex-direction: column;
+    align-items: normal;
+  }
   &__title {
+    @include font("Poppins", 35px, 600, rgb(51, 51, 51));
     margin-top: 137px;
     margin-right: auto;
   }  
