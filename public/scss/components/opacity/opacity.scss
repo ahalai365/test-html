@@ -1,0 +1,9 @@
+.opacity {
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+.opacity:hover {
+  opacity: 0.8;
+}

@@ -1,18 +1,20 @@
 .service {
   .section__content {
     flex-direction: column;
-    align-items: normal;
+    // align-items: normal;
   }
   &__title {
     margin-top: 159px;
+    align-self: flex-start;
     @include font("Raleway", 20px, 400, rgb(128, 128, 128));
   }
   &__subtitle {
     margin-top: 21px;
+    align-self: flex-start;
     @include font("Poppins", 31px, 600, rgb(51, 51, 51));
   }
   &__content {
-    margin: 70px -82px 0 -82px;
+    margin-top: 70px;
     display: flex;
     align-items: center;
   }

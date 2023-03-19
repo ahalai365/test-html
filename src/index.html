@@ -19,12 +19,12 @@
           <img class="menu__close" src=<%=require("./images/Close.png")%> />
         </label>
         <ul class="menu__content">
-          <li class="menu__links cursor_pointer">CARDS</li>
-          <li class="menu__links cursor_pointer">SERVICE</li>
-          <li class="menu__links cursor_pointer">BANKING</li>
-          <li class="menu__links cursor_pointer">FAQ</li>
-          <li class="menu__links cursor_pointer">CONTACT</li>
-          <button class="menu__sign-up">Create Account</button>
+          <li class="menu__links cursor_pointer opacity">CARDS</li>
+          <li class="menu__links cursor_pointer opacity">SERVICE</li>
+          <li class="menu__links cursor_pointer opacity">BANKING</li>
+          <li class="menu__links cursor_pointer opacity">FAQ</li>
+          <li class="menu__links cursor_pointer opacity">CONTACT</li>
+          <button class="menu__sign-up opacity">Create Account</button>
         </ul>
       </div>
       <section class="section__content">
@@ -37,12 +37,12 @@
         </div>
 
         <div class="header__content">
-          <a class="header__links cursor_pointer">CARDS</a>
-          <a class="header__links cursor_pointer">SERVICE</a>
-          <a class="header__links cursor_pointer">BANKING</a>
-          <a class="header__links cursor_pointer">FAQ</a>
-          <a class="header__links cursor_pointer">CONTACT</a>
-          <button class="header__sign-up">Create Account</button>
+          <a class="header__links cursor_pointer opacity">CARDS</a>
+          <a class="header__links cursor_pointer opacity">SERVICE</a>
+          <a class="header__links cursor_pointer opacity">BANKING</a>
+          <a class="header__links cursor_pointer opacity">FAQ</a>
+          <a class="header__links cursor_pointer opacity">CONTACT</a>
+          <button class="header__sign-up opacity">Create Account</button>
         </div>
       </section>
     </header>
@@ -56,7 +56,7 @@
           Lorem Ipsum randomised words which don't look even slightly
           believable.
         </p>
-        <button class="banner__button">Apply Now</button>
+        <button class="banner__button opacity">Apply Now</button>
         <img class="banner__img" src=<%=require("./images/credit-cards.png")%>>
       </div>
     </section>
@@ -66,44 +66,52 @@
         <h2 class="get-card__title">EASY PROCESS</h2>
         <h3 class="get-card__subtitle">TO GET A CREDIT CARD</h3>
         <div class="grid">
-          <div class="grid__item grid__item_hover">
-            <img class="grid__image"
-            src=<%=require("./images/online-application.png")%> />
-            <div class="grid__title">ONLINE APPLICATION</div>
-            <p class="grid__subtitle">
-              Information in the database is published in two formats. It is
-              available in PDF comparison according to type of credit card.
-            </p>
+          <div class="grid__wrapper">
+            <div class="grid__item grid__item_hover">
+              <img class="grid__image"
+              src=<%=require("./images/online-application.png")%> />
+              <div class="grid__title">ONLINE APPLICATION</div>
+              <p class="grid__subtitle">
+                Information in the database is published in two formats. It is
+                available in PDF comparison according to type of credit card.
+              </p>
+            </div>
           </div>
-          <div class="grid__item">
-            <img class="grid__image"
-            src=<%=require("./images/get-approval.png")%> />
-            <div class="grid__title">GET APPROVAL</div>
-            <p class="grid__subtitle">
-              Information in the database is published in two formats. It is
-              available in PDF comparison according to type of credit card.
-            </p>
+
+          <div class="grid__wrapper">
+            <div class="grid__item">
+              <img class="grid__image"
+              src=<%=require("./images/get-approval.png")%> />
+              <div class="grid__title">GET APPROVAL</div>
+              <p class="grid__subtitle">
+                Information in the database is published in two formats. It is
+                available in PDF comparison according to type of credit card.
+              </p>
+            </div>
           </div>
-          <div class="grid__item">
-            <img class="grid__image"
-            src=<%=require("./images/get-your-card.png")%> />
-            <div class="grid__title">GET YOUR CARD</div>
-            <p class="grid__subtitle">
-              Information in the database is published in two formats. It is
-              available in PDF comparison according to type of credit card.
-            </p>
+
+          <div class="grid__wrapper">
+            <div class="grid__item">
+              <img class="grid__image"
+              src=<%=require("./images/get-your-card.png")%> />
+              <div class="grid__title">GET YOUR CARD</div>
+              <p class="grid__subtitle">
+                Information in the database is published in two formats. It is
+                available in PDF comparison according to type of credit card.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="section service">
-      <section class="section__content">
+      <div class="section__content">
         <h3 class="service__title">USEFUL SERVICE AVAILABLE</h3>
         <h2 class="service__subtitle">SERVICE OF CREDIT CARD</h2>
         <div class="service__content">
-          <img class="arrow arrow_left" src=<%=require("./images/arrow.png")%>
-          alt="left" />
+          <img class="arrow arrow_left opacity"
+          src=<%=require("./images/arrow.png")%> alt="left" />
           <div class="carousel">
             <div class="carousel__content">
               <div class="carousel__item">
@@ -137,10 +145,10 @@
               </div>
             </div>
           </div>
-          <img class="arrow arrow_right" src=<%=require("./images/arrow.png")%>
-          alt="right" />
+          <img class="arrow arrow_right opacity"
+          src=<%=require("./images/arrow.png")%> alt="right" />
         </div>
-      </section>
+      </div>
     </section>
 
     <section class="section results">
@@ -189,7 +197,7 @@
 
           <div class="form__column">
             <input type="text" class="form__input" placeholder="Message" />
-            <button type="submit" class="form__submit">Submit</button>
+            <button type="submit" class="form__submit opacity">Submit</button>
           </div>
         </form>
       </div>
@@ -199,6 +207,5 @@
         >Copyright @ Digital Marketing. AllRight Reseverd</span
       >
     </footer>
-    <!-- div.container>nav>menu>li*5 -->
   </body>
 </html>

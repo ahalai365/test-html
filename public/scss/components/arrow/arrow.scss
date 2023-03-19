@@ -1,13 +1,14 @@
 .arrow {
-  // height: 100%;
-  // // max-height: 20px;
+  position: absolute;
   width: 32px;
+  top: 425px;
   cursor: pointer;
+  z-index: 2;
   &_left {
-    margin-right: 50px;
+    left: -45px;
     transform: rotateY(180deg)
   }
   &_right {
-    margin-left: 50px;
+    right: -45px;
   }
 }

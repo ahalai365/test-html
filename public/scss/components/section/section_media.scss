@@ -1,5 +1,7 @@
 @include desktop {
-  .service {
-    width: 100%
+  .section {
+    &__content {
+      padding: 0 15px 0 15px;
+    }
   }
 }

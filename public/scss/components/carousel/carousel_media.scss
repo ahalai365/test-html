@@ -1,17 +1,17 @@
-@include desktopWide {
-  .header {
-    //.... -1
+@media(max-width: 1190px){
+  .carousel {
+      max-width: 870px;
   }
 }
 
-@include tablet {
-  .header {
-    //.... -1
+@media(max-width: 990px){
+  .carousel {
+    max-width: 570px;
   }
 }
 
-@include mobile {
-  .header {
-    //.... column
+@media(max-width: 690px){
+  .carousel {
+    max-width: 270px;
   }
 }

@@ -1,11 +1,15 @@
 .carousel {
-  overflow-x: scroll;
+  position: relative;
+  z-index: 1;
+  max-width: 1170px;
+  overflow-x: hidden;
   &__content {
     position: relative;
+    z-index: 1;
     column-gap: 30px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    // width: 1170px;
+    // overflow-x: hidden;
   }
   &__img {
     object-fit: contain;

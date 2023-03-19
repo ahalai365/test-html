@@ -1,11 +1,27 @@
-@media(max-width: 1360px){
+@include desktop {
   .arrow {
-    background-color: rgb(10, 68, 216);
+    height: 270px;
+    background-color: rgb(67, 1, 245, 0.7);
+    object-fit: contain;
+    top: 300px;
     &_left {
-      margin-right: -33px;
+      left: 0;
     }
     &_right {
-      margin-left: -33px;
+      right: 0;
+    }
+  }
+}
+
+
+@media(max-width: 1190px){
+  .arrow {
+    background-color: unset;
+    &_left {
+      left: 15px;
+    }
+    &_right {
+      right: 15px;
     }
   }
 }

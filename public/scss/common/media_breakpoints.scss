@@ -21,3 +21,10 @@
     @content;
   }
 }
+
+@mixin carouselTwoElem() {
+  @media(max-width: 600px){
+    @content;
+  }
+  
+}
